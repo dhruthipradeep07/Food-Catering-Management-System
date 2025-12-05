@@ -1,0 +1,130 @@
+<html>
+<head>
+<style>
+ body{
+background-color: #D5CEA3;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:  #000000;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: right;
+  
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #c2bebc;
+}
+
+.container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color:#f9f9f9;
+        }
+
+        .container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .container input[type="text"],
+        .container input[type="email"],
+        .container textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .container textarea {
+            height: 100px;
+        }
+
+        .container input[type="submit"] {
+            background-color: #000000;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .container input[type="submit"]:hover {
+            background-color: #c2bebc;
+        }
+
+</style>
+
+ <script>
+        function validateForm() {
+            var email = document.forms["contactForm"]["email"].value;
+            if (name == "" || gender == "" || phone no == "" ||email == "" ||password == "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+<ul>
+
+  <li style="float:left"><a class="food" href="#foodcatering">ONLINE FOOD CATERING SYSTEM</a></li>
+  <li><a href="contactus.html">CONTACT</a></li>
+  <li><a href="aboutus.html">ABOUT</a></li>
+  <li style="float:right"><a href="home.html">HOME</a></li>
+</ul><br><br><br>
+
+<center>
+  <div class="container">
+  <h1>LOGIN<h1>
+<form method="post" action="login.php">
+  <table>
+     <tr>
+<td>
+  E-mail
+</td>
+<td>
+ <input type="text" id="E-Mail"  placeholder="E-mail"  pattern="[a-z0-9._%+-]+@[gmailyahoohotmail]+\.[a-z]{2,}$"name="email" required/>
+</td>
+</tr>
+
+   <tr>
+    <td>
+  Password
+</td>
+  <td>
+  <input type="password" id="Password"  placeholder="password" pattern = " (?=.*\d) ( ? =.*[a-z]) (?= *(A-z].{8,}" title= "Must Contain at least one number and one uppercase and lowercase letter and at least 8 or more characters"name="password"required/ ><br><br>
+  
+</td>
+</tr><br>
+
+<tr>
+<td>
+  <center><input type="submit" value="LOGIN"></center><br><br>
+  <a href="forgot.html">Forgot password?</a>
+</td>
+</tr>
+
+
+</table>
+</form>
+</body>
+</html>

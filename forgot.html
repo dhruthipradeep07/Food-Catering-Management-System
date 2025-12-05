@@ -1,0 +1,119 @@
+<html>
+<head>
+<style>
+body{
+background-color: #D5CEA3;
+} 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:  #000000;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: right;
+  
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #c2bebc;
+}
+
+.container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        .container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .container input[type="text"],
+        .container input[type="email"],
+        .container textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .container textarea {
+            height: 100px;
+        }
+
+        .container input[type="submit"] {
+            background-color: #000000;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .container input[type="submit"]:hover {
+            background-color: #C060A1;
+        }
+
+</style>
+
+<script>
+        function validateForm() {
+            var name = document.forms["contactForm"]["name"].value;
+            var email = document.forms["contactForm"]["email"].value;
+            var message = document.forms["contactForm"]["message"].value;
+
+            if (name == "" || email == "" || message == "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<ul>
+
+  <li style="float:left"><a href="#foodcatering">Online Food Catering System</a></li>
+  <li><a href="register.html">REGISTER</a></li>
+  <li><a href="contactus.html">CONTACT</a></li>
+  <li><a href="aboutus.html">ABOUT</a></li>
+  <li style="float:right"><a href="home.html">HOME</a></li>
+</ul><br><br>
+
+<center>
+  <div class="container">
+  <h1>FORGOT PASSWORD<h1>
+  <form method="post" action="forgotpwd.php">
+<table>
+  <tr>
+<td>
+  Email Id
+</td>
+<td>
+ <input type="email" name="textfield" placeholder="Email id"  required/ >
+</td>
+</tr>
+<br>
+
+<tr>
+<td>
+  <input type="submit" value="SUBMIT">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

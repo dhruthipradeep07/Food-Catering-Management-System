@@ -1,0 +1,287 @@
+<html>
+<head>
+<style>
+ body{
+background-color: #D5CEA3;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:  #000000;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: right;
+  
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #c2bebc;
+}
+
+.container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color:#f9f9f9;
+        }
+
+        .container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .container input[type="text"],
+        .container input[type="email"],
+        .container textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .container textarea {
+            height: 100px;
+        }
+
+        .container input[type="submit"] {
+            background-color: #000000;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .container input[type="submit"]:hover {
+            background-color: #c2bebc;
+        }
+
+</style>
+
+ <script>
+        function validateForm() {
+            var email = document.forms["contactForm"]["email"].value;
+            if (name == "" || gender == "" || phone no == "" ||email == "" ||password == "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+<ul>
+
+  <li style="float:left"><a class="food" href="#foodcatering">ONLINE FOOD CATERING SYSTEM</a></li>
+  <li><a href="MENU1.html">MENU</a></li>
+   <li><a href="register.html">REGISTER</a></li>
+ <li><a href="login.html">LOGIN</a></li>
+  <li><a href="contactus.html">CONTACT</a></li>
+  <li><a href="aboutus.html">ABOUT</a></li>
+  <li style="float:right"><a href="home.html">HOME</a></li>
+</ul>
+
+	<div class="menu">
+		<div class="heading">
+			<h1>Menu</h1>
+		</div>
+		<div class="food-items">
+			<img src="\catering\img\pickel_menu.jpeg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="pickle.php" class="button">Pickle</a>
+			</center>
+			</div>
+			</div>
+		</div>
+		<div class="food-items">
+			<img src="\catering\img\veg_starter_menu.jpeg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="vegstarter.php" class="button">Veg Starter</a>
+			</center>
+			</div>
+			</div>
+		</div>
+		<div class="food-items">
+			<img src="\catering\img\non_veg_starter_menu.jpeg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="nonvegstarter.php" class="button">Non-Veg Starters</a>
+			</center>
+			</div>
+			</div>
+		</div>
+			
+			<div class="food-items">
+			<img src="\catering\img\roti_menu.jpeg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="roties.php" class="button">Roties</a>
+			</center>
+			</div>
+			</div>
+		</div>
+			<div class="food-items">
+			<img src="\catering\img\vegcurry_menu.jpeg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+			    <a href="vegcurry.php" class="button">Veg Curry</a>
+			</center>
+			</div>
+			</div>
+		</div>
+			<div class="food-items">
+			<img src="\catering\img\non-vegcurry_menu.jpeg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="nonvegcurry.php" class="button">Non-Veg Curry</a>
+			</center>
+			</div>
+			</div>
+		</div>
+			<div class="food-items">
+			<img src="\catering\img\egg_menu.jpeg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="eggs.php" class="button">Eggs</a>
+			</center>
+			</div>
+			</div>
+		</div>
+			<div class="food-items">
+			<img src="\catering\img\V_biriyani_menu.jpeg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="vegbiriyani.php" class="button">Veg Biriyani</a>
+			</center>
+			</div>
+			</div>
+		</div>
+			<div class="food-items">
+			<img src="\catering\img\NV_biriyani_menu.jpeg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="nonvegbiriyani.php" class="button">Non-Veg Biriyani</a>
+			</center>
+			</div>
+			</div>
+		</div>
+			<div class="food-items">
+			<img src="\catering\img\rice_menu.jpeg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="rice.php" class="button">Rice</a>
+			</center>
+			</div>
+			</div>
+		</div>
+		<div class="food-items">
+			<img src="\catering\img\beverages_menu.jpg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="beverages.php" class="button">Beverages</a>
+			</center>
+			</div>
+			</div>
+		</div>
+		<div class="food-items">
+			<img src="\catering\img\fruit_juice_menu.jpeg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="fruitjuice.php" class="button">Fruit Drinks</a>
+			</center>
+			</div>
+			</div>
+		</div>
+		<div class="food-items">
+			<img src="\catering\img\milkshakes_menu.jpg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="milkshakes.php" class="button">Milkshakes</a>
+			</center>
+			</div>
+			</div>
+		</div>
+		<div class="food-items">
+			<img src="\catering\img\softdrinks_menu.jpg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="softdrinks.php" class="button">Soft Drinks</a>
+			</center>
+			</div>
+			</div>
+		</div>
+		<div class="food-items">
+			<img src="\catering\img\sweets_menu.jpg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="desserts.php" class="button">Sweets</a>
+			</center>
+			</div>
+			</div>
+		</div>
+			<div class="food-items">
+			<img src="\catering\img\icecream_menu.jpeg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="icecream.php" class="button">Ice Cream</a>
+			</center>
+			</div>
+			</div>
+		</div>
+		<div class="food-items">
+			<img src="\catering\img\chats_menu.jpg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="chats.php" class="button">CHATS</a>
+			</center>
+			</div>
+			</div>
+		</div>
+		<div class="food-items">
+			<img src="\catering\img\water_menu.jpg">
+			<div class="details">
+				<div class="details-sub">
+					<center>
+				<a href="water.php" class="button">WATER</a>
+			</center>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+	</html>
+
+

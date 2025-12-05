@@ -1,0 +1,99 @@
+<?php
+ /* session_start();
+  $conn=mysqli_connect("localhost","root","","catering");
+  if(!isset($_SESSION['name'])){
+    header("localhost:login.php");
+    die();
+   }*/
+ ?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.image{
+ 
+  filter: brightness(75%);
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #c2bebc;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #c2bebc;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <li style="float:left"><a href="#">ONLINE FOOD CATERING SYSTEM</a></li>
+  <a href="home.html">Logout</a>
+ <a href="feedback.php">Feedback</a>
+ <a href="ahistory.php">History</a>
+ <a href="mycart.php">Cart</a>
+  <a href="menu2.php">Menu</a>
+ 
+ 
+  
+  
+</div>
+<div class="image">
+<img src="\catering\img\page1l.jpg" alt="about us" width="1520" height="700">
+</div>
+</body>
+</html>
